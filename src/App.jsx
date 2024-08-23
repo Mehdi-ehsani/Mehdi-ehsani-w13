@@ -7,7 +7,7 @@ import Exit from "./pages/Exit";
 
 function App() {
 	const [hover, setHover] = useState(null);
-	const [page, setPage] = useState({
+	const [page, setPage] = useState(JSON.parse(localStorage.getItem("page")) || {
 		ads: true,
 		myAds: false,
 		profile: false,
@@ -22,6 +22,12 @@ function App() {
 					profile: false,
 					exit: false,
 				});
+        localStorage.setItem("page" , JSON.stringify({
+					ads: true,
+					myAds: false,
+					profile: false,
+					exit: false,
+				}))
 				break;
 			case "myAds":
 				setPage({
@@ -30,6 +36,12 @@ function App() {
 					profile: false,
 					exit: false,
 				});
+        localStorage.setItem("page" , JSON.stringify({
+					ads: false,
+					myAds: true,
+					profile: false,
+					exit: false,
+				}))
 				break;
 			case "profile":
 				setPage({
@@ -38,6 +50,12 @@ function App() {
 					profile: true,
 					exit: false,
 				});
+        localStorage.setItem("page" , JSON.stringify({
+					ads: false,
+					myAds: false,
+					profile: true,
+					exit: false,
+				}))
 				break;
 			case "exit":
 				setPage({
@@ -46,6 +64,12 @@ function App() {
 					profile: false,
 					exit: true,
 				});
+        localStorage.setItem("page" , JSON.stringify({
+					ads: false,
+					myAds: false,
+					profile: false,
+					exit: true,
+				}))
 				break;
 		}
 	};
