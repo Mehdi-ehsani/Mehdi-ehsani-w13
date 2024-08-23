@@ -2,8 +2,16 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+    font-family: casablanka;
+    src: url(./assets/Fonts/Casablanca/Casablanca.Font.ttf);
+}
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif , Arial, Helvetica, sans-serif;
+}
+body {
+    max-width: 1400px;
+    margin: auto;
+    font-family: casablanka , sans-serif;
 }
