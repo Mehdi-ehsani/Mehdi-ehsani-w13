@@ -88,7 +88,7 @@ function App() {
 	return (
 		<div>
 			<Navbar />
-			<div className="grid grid-cols-4" >
+			<div className="grid grid-cols-4 gap-8" >
 				<div className="col-span-3">{showHandler()}</div>
 				<div className="w-full h-[300px] col-span-1 bg-gray-100 rounded-3xl mt-8  shadow-lg p-4">
           <p onClick={() => pageChangeHandler("ads")} onMouseEnter={() => hoverEnterHandler("ads")} onMouseLeave={() => hoverLeaveHandler()} className={hover === "ads" || page.ads? "text-red-600 text-2xl text-center h-1/4 border-b-2 border-gray-200 leading-[65px] cursor-pointer" : "text-2xl text-center h-1/4 border-b-2 border-gray-200 leading-[65px] cursor-pointer"}>آگهی ها</p>
