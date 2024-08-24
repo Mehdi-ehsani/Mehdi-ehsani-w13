@@ -32,7 +32,7 @@ const Profile = () => {
 		}
 	};
 	return (
-		<div className=" w-full flex flex-col gap-3 text-xl  mt-8 mr-20" dir="rtl">
+		<div className=" w-full flex flex-col gap-3 text-xl  my-8 ">
       <label  className="text-xl text-gray-600">نام</label>
 			<input
 				onChange={changeHandler}

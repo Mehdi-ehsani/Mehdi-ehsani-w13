@@ -19,7 +19,7 @@ const Cards = () => {
         {img: pic6 , title: "دوچرخه" , date: "1402/11/11" , price: "20,000,000"},
     ])
   return (
-    <div className="grid grid-cols-2 gap-10 mr-10 mt-8" >
+    <div className="grid md:grid-cols-2  grid-cols-1 gap-10  mt-8" >
         {data.map(card => <Card key={card.title} title={card.title} price={card.price} date={card.date} img={card.img}/>)}
     </div>
   )

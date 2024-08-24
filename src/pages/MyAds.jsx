@@ -3,7 +3,7 @@ import MyCard from '../components/MyCard'
 
 const MyAds = () => {
   return (
-    <div className='m-8' dir="rtl">
+    <div className='my-8'>
       <MyCard/>
     </div>
   )
